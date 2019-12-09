@@ -81,7 +81,7 @@ namespace SpaceShooter_Example
                 case GameElements.State.Quit:
                     this.Exit();
                     break;
-                default: GameElements.currentState = GameElements.MenuUppdate();
+                default: GameElements.currentState = GameElements.MenuUpdate(gameTime);
                     break;
             }
 

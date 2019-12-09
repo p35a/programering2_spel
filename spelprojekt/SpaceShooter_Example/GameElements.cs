@@ -39,10 +39,10 @@ namespace SpaceShooter_Example
             menuPos.Y = Window.ClientBounds.Height / 2 - menuSprite.Height / 2;
 
 
-            menu = new Menu((int)State.Menu);
+            /*menu = new Menu((int)State.Menu);
             menu.AddItem(Content.Load<Texture2D>("images/menu/start"),(int)State.Run);
             menu.AddItem(Content.Load<Texture2D>("images/menu/highscore"), (int)State.HighScore);
-            menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);
+            menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);*/
 
 
             player = new Player(Content.Load<Texture2D>("player/ship"), 380, 400, 2.5f, 4.5f, Content.Load<Texture2D>("bullet"));
@@ -105,7 +105,7 @@ namespace SpaceShooter_Example
 
         public static State MenuUpdate(GameTime gameTime)
         {
-            return (State)menu.Update(gameTime);
+            //return (State)menu.Update(gameTime);
 
             KeyboardState keyboardState = Keyboard.GetState();
 

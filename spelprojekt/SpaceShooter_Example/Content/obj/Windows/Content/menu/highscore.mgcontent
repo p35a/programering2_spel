@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/menu/highscore.png</SourceFile>
-  <SourceTime>2019-11-07T14:15:40.0913075+01:00</SourceTime>
-  <DestFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/bin/Windows/Content/menu/highscore.xnb</DestFile>
-  <DestTime>2019-11-07T14:22:58.1718659+01:00</DestTime>
+  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/menu/highscore.png</SourceFile>
+  <SourceTime>2019-12-09T09:45:00.4115285+01:00</SourceTime>
+  <DestFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/bin/Windows/Content/menu/highscore.xnb</DestFile>
+  <DestTime>2019-12-09T09:54:48.891529+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
