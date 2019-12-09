@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/background.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/bullet.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/coin.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/Font.spritefont</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/menu.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/menu/exit.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/menu/highscore.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/menu/start.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/mine.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/player/ship.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/stone.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/SpaceShooter_Example/SpaceShooter_Example/Content/tripod.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

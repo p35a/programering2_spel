@@ -1,0 +1,41 @@
+            if (ship_vector.X <= Window.ClientBounds.Width - ship_tex.Width && ship_vector.X >= 0)
+            {
+                if (keyBoardState.IsKeyDown(Keys.Right))
+                {
+                    ship_vector.X += ship_speed.X;
+                }
+                if (keyBoardState.IsKeyDown(Keys.Left))
+                {
+                    ship_vector.X -= ship_speed.X;
+                }
+            }
+
+            if (ship_vector.Y <= Window.ClientBounds.Height - ship_tex.Height && ship_vector.Y >= 0)
+            {
+                if (keyBoardState.IsKeyDown(Keys.Down))
+                {
+                    ship_vector.Y += ship_speed.Y;
+                }
+                if (keyBoardState.IsKeyDown(Keys.Up))
+                {
+                    ship_vector.Y -= ship_speed.Y;
+                }
+            }
+
+            if (ship_vector.X < 0)
+            {
+                ship_vector.X = 0;
+            }
+            if (ship_vector.X > Window.ClientBounds.Width - ship_tex.Width)
+            {
+                ship_vector.X = Window.ClientBounds.Width - ship_tex.Width;
+            }
+
+            if (ship_vector.Y < 0)
+            {
+                ship_vector.Y = 0;
+            }
+            if (ship_vector.Y > Window.ClientBounds.Height - ship_tex.Height)
+            {
+                ship_vector.Y = Window.ClientBounds.Height - ship_tex.Height;
+            }
