@@ -45,7 +45,7 @@ namespace SpaceShooter_Example
             menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);*/
 
 
-            player = new Player(Content.Load<Texture2D>("player/ship"), 380, 400, 2.5f, 4.5f, Content.Load<Texture2D>("bullet"));
+            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom, 2.5f, 4.5f, Content.Load<Texture2D>("bullet"));
             enemies = new List<Enemy>();
             goldCoins = new List<GoldCoin>();
 
@@ -56,17 +56,6 @@ namespace SpaceShooter_Example
                 int rndX = rnd.Next(0, Window.ClientBounds.Width - tmpSprite.Width);
                 int rndY = rnd.Next(0, Window.ClientBounds.Height - tmpSprite.Height / 2);
                 Mine temp = new Mine(Content.Load<Texture2D>("mine"), rndX, rndY);
-                enemies.Add(temp);
-            }
-
-            tmpSprite = Content.Load<Texture2D>("tripod");
-            for (int i = 0; i < 11; i++)
-            {
-                int RndX = rnd.Next(0, Window.ClientBounds.Width);
-                int RndY = rnd.Next(0, Window.ClientBounds.Height / 2);
-
-                Tripod temp = new Tripod(tmpSprite, RndX, RndY);
-
                 enemies.Add(temp);
             }
 
@@ -91,16 +80,6 @@ namespace SpaceShooter_Example
                 enemies.Add(temp);
             }
 
-            tmpSprite = Content.Load<Texture2D>("tripod");
-            for (int i = 0; i < 11; i++)
-            {
-                int RndX = rnd.Next(0, Window.ClientBounds.Width);
-                int RndY = rnd.Next(0, Window.ClientBounds.Height / 2);
-
-                Tripod temp = new Tripod(tmpSprite, RndX, RndY);
-
-                enemies.Add(temp);
-            }
         }
 
         public static State MenuUpdate(GameTime gameTime)
@@ -143,7 +122,7 @@ namespace SpaceShooter_Example
                 {
                     if (e.checkCollision(player))
                     {
-                        player.IsAlive = false;
+                        player.IsAlive = true;
                     }
                     e.Update(Window);
                 }
@@ -182,7 +161,7 @@ namespace SpaceShooter_Example
                 }
             }
 
-            if (!player.IsAlive) return State.Menu;
+            if (!player.IsAlive)
             {
                 Reset(Window, Content);
                 return State.Menu;

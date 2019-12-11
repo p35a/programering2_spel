@@ -42,8 +42,10 @@ namespace SpaceShooter_Example
                 }
                 if (keyBoardState.IsKeyDown(Keys.Up))
                 {
-                    vector.Y -= speed.Y;
+                    vector.Y -= speed.Y - 0.1f;
                 }
+
+                vector.Y = speed.Y + 0.05f;
             }
 
             if (vector.X < 0)
