@@ -11,7 +11,7 @@ namespace SpaceShooter_Example
     class GoldCoin : PhysicalObject
     {
         double timeToDie;
-        public GoldCoin(Texture2D texture, float X, float Y, GameTime gameTime):base(texture, X, Y, 0, 2f)
+        public GoldCoin(Texture2D texture, float X, float Y, GameTime gameTime):base(texture, X, Y)
         {
             timeToDie = gameTime.TotalGameTime.TotalMilliseconds + 5000;
         }

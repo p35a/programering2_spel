@@ -38,16 +38,14 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Bullet.cs" />
-    <Compile Include="Enemy.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="GoldCoin.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuItem.cs" />
-    <Compile Include="Mine.cs" />
     <Compile Include="MovingObject.cs" />
+    <Compile Include="MånsVerktygslåda.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PrintText.cs" />
     <Compile Include="Program.cs" />
@@ -66,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

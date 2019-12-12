@@ -18,7 +18,6 @@ namespace SpaceShooter_Example
         static PrintText printText;
         static Player player;
         static List<GoldCoin> goldCoins;
-        static List<Enemy> enemies;
         static Texture2D goldCoinSprite;
         static Texture2D background;
         static Menu menu;
@@ -45,19 +44,9 @@ namespace SpaceShooter_Example
             menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);*/
 
 
-            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom, 2.5f, 4.5f, Content.Load<Texture2D>("bullet"));
-            enemies = new List<Enemy>();
+            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom);
             goldCoins = new List<GoldCoin>();
 
-            Texture2D tmpSprite = Content.Load<Texture2D>("mine");
-            Random rnd = new Random();
-            for (int i = 0; i < 11; i++)
-            {
-                int rndX = rnd.Next(0, Window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = rnd.Next(0, Window.ClientBounds.Height - tmpSprite.Height / 2);
-                Mine temp = new Mine(Content.Load<Texture2D>("mine"), rndX, rndY);
-                enemies.Add(temp);
-            }
 
             printText = new PrintText(Content.Load<SpriteFont>("Font"));
             background = Content.Load<Texture2D>("background");
@@ -67,25 +56,10 @@ namespace SpaceShooter_Example
         public static void Reset(GameWindow Window, ContentManager Content)
         {
             player.Reset(380, 400, 2.5f, 4.5f);
-
-            enemies.Clear();
-
-            Texture2D tmpSprite = Content.Load<Texture2D>("mine");
-            Random rnd = new Random();
-            for (int i = 0; i < 11; i++)
-            {
-                int rndX = rnd.Next(0, Window.ClientBounds.Width - tmpSprite.Width);
-                int rndY = rnd.Next(0, Window.ClientBounds.Height - tmpSprite.Height / 2);
-                Mine temp = new Mine(Content.Load<Texture2D>("mine"), rndX, rndY);
-                enemies.Add(temp);
-            }
-
         }
 
         public static State MenuUpdate(GameTime gameTime)
         {
-            //return (State)menu.Update(gameTime);
-
             KeyboardState keyboardState = Keyboard.GetState();
 
             if(keyboardState.IsKeyDown(Keys.S)) return State.Run;
@@ -106,31 +80,6 @@ namespace SpaceShooter_Example
         {
             // TODO: Add your update logic here
             player.uppdate(Window, gameTime);
-
-            foreach (Enemy e in enemies.ToList())
-            {
-                foreach (Bullet b in player.bullets)
-                {
-                    if (e.checkCollision(b))
-                    {
-                        e.IsAlive = false;
-                        player.Points++;
-                    }
-                }
-
-                if (e.IsAlive)
-                {
-                    if (e.checkCollision(player))
-                    {
-                        player.IsAlive = true;
-                    }
-                    e.Update(Window);
-                }
-                else
-                {
-                    enemies.Remove(e);
-                }
-            }
 
             Random rnd = new Random();
             int newCoin = rnd.Next(1, 200);
@@ -166,6 +115,7 @@ namespace SpaceShooter_Example
                 Reset(Window, Content);
                 return State.Menu;
             }
+            // uppdate end/// 7/7 7/ 7 77 7 77 7 7 7gdwgdojhfiu
 
             return State.Run;
         }
@@ -179,11 +129,6 @@ namespace SpaceShooter_Example
             foreach (GoldCoin gc in goldCoins)
             {
                 gc.Draw(spriteBatch);
-            }
-
-            foreach (Enemy e in enemies)
-            {
-                e.Draw(spriteBatch);
             }
         }
 
