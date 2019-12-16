@@ -11,7 +11,7 @@ namespace SpaceShooter_Example
     abstract class PhysicalObject : MovingObject
     {
         public bool IsAlive { get; set; } = true;
-        public PhysicalObject(Texture2D texture, float X, float Y) : base(texture, X, Y)
+        public PhysicalObject(Texture2D texture, float X, float Y, double mass, double direction) : base(texture, X, Y, mass, direction)
         {
 
         }

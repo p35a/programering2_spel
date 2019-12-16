@@ -10,8 +10,11 @@ namespace SpaceShooter_Example
     {
         public int Points { get; set; } = 0;
         float acceleration = 0;
+        double force = 0;
+        double rotation = 0;
 
-        public Player(Texture2D texture, float X, float Y) : base(texture, X, Y)
+
+        public Player(Texture2D texture, float X, float Y, double mass, double direction) : base(texture, X, Y, mass, direction)
         {
 
         }
@@ -23,12 +26,15 @@ namespace SpaceShooter_Example
             {
                 if (keyBoardState.IsKeyDown(Keys.Right))
                 {
-                    
+                    force = 1000;
+                    direction += 0.5;
                 }
                 if (keyBoardState.IsKeyDown(Keys.Left))
                 {
-                    
+                    force = 1000;
+                    direction -= 0.5;
                 }
+                
             }
 
 
@@ -36,11 +42,16 @@ namespace SpaceShooter_Example
             {
                 if (keyBoardState.IsKeyDown(Keys.Down))
                 {
-                    acceleration = -0.01f;
+                    
                 }
                 if (keyBoardState.IsKeyDown(Keys.Up))
                 {
-                    acceleration = 0.001f;
+                    force = 1000;
+                }
+
+                if(!(keyBoardState.IsKeyDown(Keys.Up)|| keyBoardState.IsKeyDown(Keys.Left) || keyBoardState.IsKeyDown(Keys.Right)))
+                {
+                    force = 0;
                 }
             }
 
@@ -49,7 +60,7 @@ namespace SpaceShooter_Example
                 IsAlive = false;
             }
 
-            updatePos(Window);
+            Acceleration(Window, force, direction);
         }
 
         private bool onGround(GameWindow Window)

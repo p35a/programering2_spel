@@ -1,5 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
 
 namespace SpaceShooter_Example
 {
@@ -7,25 +9,39 @@ namespace SpaceShooter_Example
     {
         protected Vector2 speed;
         protected Vector2 acceleration;
+        protected double mass;
+        protected double direction;
 
-        public MovingObject(Texture2D texture, float X, float Y) : base(texture, X, Y)
+        public MovingObject(Texture2D texture, float X, float Y, double mass, double direction) : base(texture, X, Y)
         {
             acceleration.Y = 0;
             acceleration.X = 0;
+
+            this.mass = mass;
+            this.direction = direction;
         }
 
-        public void updatePos(GameWindow Window)
+        public void Acceleration(GameWindow Window,double force, double direction)
         {
-            speed.Y += acceleration.Y;
-            speed.X += acceleration.X;
+            double forceY = (Math.Cos(direction) * force) - (mass / 2);
+            double forceX = Math.Sin(direction) * force;
 
-            
-            if (!(vector.Y > Window.ClientBounds.Height - texture.Height || vector.Y < 0))
+            speed.X += (float)(forceX / mass) / 5;
+            speed.Y += (float)(forceY / mass) / 5;
+
+            //change position Y axis
+            bool insideWindowY = !(vector.Y > Window.ClientBounds.Height - texture.Height || vector.Y < 0);
+            if (insideWindowY)
             {
                 vector.Y -= speed.Y;
             }
 
-            if(!(vector.X > Window.ClientBounds.Width - texture.Width || vector.X < 0))
+
+
+
+            //change position X axis
+            bool insideWindowX = !(vector.X > Window.ClientBounds.Width - texture.Width || vector.X < 0);
+            if (insideWindowX)
             {
                 vector.X -= speed.X;
             }

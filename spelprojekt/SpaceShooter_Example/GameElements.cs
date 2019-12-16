@@ -44,7 +44,7 @@ namespace SpaceShooter_Example
             menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);*/
 
 
-            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom);
+            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom -200, 1000, 0);
             goldCoins = new List<GoldCoin>();
 
 
@@ -89,7 +89,7 @@ namespace SpaceShooter_Example
                 int rndX = rnd.Next(0, Window.ClientBounds.Width - tmpCoin.Width);
                 int rndY = rnd.Next(0, Window.ClientBounds.Height - tmpCoin.Height / 2);
 
-                goldCoins.Add(new GoldCoin(tmpCoin, rndX, rndY, gameTime));
+                goldCoins.Add(new GoldCoin(tmpCoin, rndX, rndY, gameTime, 10, 0));
             }
 
             foreach (GoldCoin gc in goldCoins.ToList())
