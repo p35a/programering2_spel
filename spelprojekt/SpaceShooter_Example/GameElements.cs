@@ -44,7 +44,7 @@ namespace SpaceShooter_Example
             menu.AddItem(Content.Load<Texture2D>("images/menu/exit"), (int)State.Quit);*/
 
 
-            player = new Player(Content.Load<Texture2D>("player/ship"), 380, Window.ClientBounds.Bottom -200, 1000, 0);
+            player = new Player(Content.Load<Texture2D>("playerNone"), Content.Load<Texture2D>("playerRight"), Content.Load<Texture2D>("playerLeft"), Content.Load<Texture2D>("playerBoth"), 380, Window.ClientBounds.Bottom -200, 1000, 0);
             goldCoins = new List<GoldCoin>();
 
 
@@ -126,6 +126,7 @@ namespace SpaceShooter_Example
 
             // TODO: Add your drawing code here
             player.Draw(spriteBatch);
+
             foreach (GoldCoin gc in goldCoins)
             {
                 gc.Draw(spriteBatch);

@@ -4,31 +4,37 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/background.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/bullet.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/coin.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/Font.spritefont</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/menu.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/menu/exit.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/menu/highscore.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/menu/start.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/mine.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/player/ship.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/stone.png</File>
-    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/tripod.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/background.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/bullet.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/coin.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/Font.spritefont</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/menu.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/menu/exit.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/menu/highscore.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/menu/start.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/mine.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/playerBoth.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/playerLeft.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/playerNone.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/playerRight.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/stone.png</File>
+    <File>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/tripod.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
+    <File>background.png</File>
+    <File>bullet.png</File>
+    <File>coin.png</File>
+    <File>Font.spritefont</File>
+    <File>menu.png</File>
+    <File>menu/exit.png</File>
+    <File>menu/highscore.png</File>
+    <File>menu/start.png</File>
+    <File>mine.png</File>
+    <File>playerBoth.png</File>
+    <File>playerLeft.png</File>
+    <File>playerNone.png</File>
+    <File>playerRight.png</File>
+    <File>stone.png</File>
+    <File>tripod.png</File>
   </DestFiles>
 </SourceFileCollection>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/coin.png</SourceFile>
+  <SourceFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/../content2/coin.png</SourceFile>
   <SourceTime>2019-12-09T09:45:00.3177724+01:00</SourceTime>
   <DestFile>I:/rbk/Elevmtrl 03-04/Data/Joakim Cronelöv/Elevmappar/PROG2121910/ehp284/Spel_exe/spelprojekt/SpaceShooter_Example/Content/bin/Windows/Content/coin.xnb</DestFile>
-  <DestTime>2019-12-09T09:54:48.4219057+01:00</DestTime>
+  <DestTime>2019-12-18T11:12:58.3219383+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
